@@ -48,7 +48,7 @@ namespace CarLotSimulator
             var z3 = new Car()
             {
                 Year = 2020,
-                Make = "BMW",
+                Make = "BMW", 
                 Model = "z3",
                 EngineNoise = "swoosh",
                 HonkNoise = "meep",
@@ -72,6 +72,8 @@ namespace CarLotSimulator
             b1.MakeHonkNoise(b1.HonkNoise);
             z3.MakeHonkNoise(z3.HonkNoise);
             q4.MakeHonkNoise(q4.HonkNoise);
+
+            Console.WriteLine($"Number of cars created {CarLot.numberOfCars}");
 
             foreach(var car in lot.Cars)
             {
